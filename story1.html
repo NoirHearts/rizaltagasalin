@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+        <title>Ang Puno ng Pino</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                    sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        position: relative;
+        background: url('tree.jpeg');
+        width: auto;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #303932;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: .3s;
+        padding: 10px 40px;
+        background-color: antiquewhite;
+        z-index: 100000;
+    }
+
+    nav .logo{
+        position: relative;
+        text-decoration: none;
+        font-weight: 700;
+        color: #a16b56;
+        letter-spacing: 0px;
+        font-size: 2em;
+        transition: .2s;
+    }
+    
+    nav .logo:hover {
+        font-variation-settings: "wght" 700; 
+        letter-spacing: 1px;
+    }
+    nav ul {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color: #a16b56;
+        transition: .2s;
+    }
+    nav .menu-btn i {
+        color: #a16b56;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    @media (max-width: 1000px) {
+        nav {
+            padding: 0 40px 0 50px;
+        }
+    }
+
+    @media (max-width:800px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 40px;
+        left: -100%;
+        background: antiquewhite;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.2s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        padding: 10px;
+    }
+    #click:checked ~ ul li a{
+        margin-left: 0px;
+    }
+    
+    nav ul li a:hover{
+        background: #a16b56;
+        color: antiquewhite;
+        padding: 10px;
+    }
+    }
+
+    table {
+        color: antiquewhite;
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+        width: 90%;
+        text-shadow: 2px 2px #667767;
+    }
+
+    .stories {
+        margin-top: 7%;
+    }
+    h1 {
+        color: antiquewhite;
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    .tabContent {
+        height: 65vh;
+        width: 95%;
+    }
+    
+    img {
+        height: 40vh;
+        display: block;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: -100px;
+        border: #303932;
+        border-style: solid;
+
+    }
+</style>
+</head>
+<body>
+     <nav>
+         <a href="pi.html" class="logo">GROUP 6</a>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+             <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+             <li> <a href="story1.html">Story 1</a> </li>
+             <li> <a href="story2.html">Story 2</a> </li>
+             <li> <a href="story3.html">Story 3</a> </li>
+             <li> <a href="story4.html">Story 4</a> </li>
+             <li> <a href="story5.html">Story 5</a> </li>
+         </ul>
+     </nav>
+
+<img src="p1.jpg">
+<div class="stories">
+    <h1 style="text-shadow: 2px 2px #303932;">Ang Puno ng Pino</h1><br>
+<table>
+  <tr>
+    <th>Danish</th>
+    <th>English</th>
+  </tr>
+  <tr>
+        <td>
+            <iframe class="tabContent" frameborder="3" src="1d.html">
+            </iframe>
+        </td>
+        <td>
+            <iframe class="tabContent" frameborder="3" src="1e.html">
+            </iframe>
+        </td>
+
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
